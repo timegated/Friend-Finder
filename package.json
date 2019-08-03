@@ -10,9 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
   },
   "script": {
-      "start":"node server.js"
-    }
+    "start": "nodemon server.js"
   }
+}

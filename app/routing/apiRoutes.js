@@ -5,4 +5,10 @@
 //Convert scores into arrays, compare arrays (subtract each item in one array from the other item in the other array)
 //Add up total differences with no negative numbers, absolute values Math.abs (strong math)
 
+const friends = require("../data/friends")
 
+module.exports = function(app) {
+    app.get("/api/friends", (req,res) => {
+        res.json(friends)
+    })
+}
