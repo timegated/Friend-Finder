@@ -24,9 +24,9 @@ $('#sendInfo').click((event) => {
             if(data){
                 console.log('in here')
             }
-
-        // $('#friendName').text(friends.name)
-        // $('#friendPhoto').attr("src", friends.img)
+            
+        // $('#friendName').text(data.name)
+        // $('#friendPhoto').attr("src", data.img)
         $('#friendMode').toggle()
     })
             // $('#name').val("")

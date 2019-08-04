@@ -7,7 +7,14 @@ module.exports = (app) => {
     })
 
     app.post('/api/friends', (request, result) => {
-        console.log(request)
-        friends.push(request.body);
+        let user = request.body.scores
+       for(let item in friends) {
+           let friendScores = friends[item].scores
+           console.log(friendScores)
+       }
+        
+        console.log(user)
+        
+    //   friends.push(request.body);
     })
 };
