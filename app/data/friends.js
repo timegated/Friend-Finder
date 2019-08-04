@@ -1,4 +1,4 @@
-const friends = [
+let friends = [
     {
         name:"Steve Brule",
         img:"https://i.kym-cdn.com/photos/images/newsfeed/000/219/876/1324354414335.jpg",

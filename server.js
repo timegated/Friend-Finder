@@ -1,26 +1,17 @@
-const path = require("path")
-const bodyParser = require("body-parser")
-const express = require("express");
+let express = require('express');
+let path = require('path');
+let app = express();
 
-const app = express();
+let PORT = process.env.PORT || 3000;
 
-
-
-const PORT = process.env.PORT || 3000;
-
-//Converting object data into json format
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.text());
-app.use(bodyParser.json({type: "application/vnd.api.json"}))
-
-//Getting file from app folder for html content
-
-require("./app/routing/apiRoutes.js")(app);
-require("./app/routing/htmlRoutes.js")(app);
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
+app.use('/public', express.static(path.join(__dirname, 'app/public/')));
 
 
+require('./app/routing/apiRoutes')(app);
+require('./app/routing/htmlRoutes')(app);
 
 app.listen(PORT, () => {
-    console.log(`Listening on PORT: ${PORT}`)
-});
+    console.log('App listening on PORT: ' + PORT)
+})

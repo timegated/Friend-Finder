@@ -1,21 +1,13 @@
-//Accessing items in a nested array - OBJECT PROPERTY
-//10 questions with a score range from 1-5
-//Each friend gets 10 scores, each question answered gets a score. Array is populated
-//Compatibility logic
-//Convert scores into arrays, compare arrays (subtract each item in one array from the other item in the other array)
-//Add up total differences with no negative numbers, absolute values Math.abs (strong math)
+let friends = require('../data/friends');
 
-const friends = require("../data/friends")
-
-module.exports = function(app) {
-
-    app.get("/api/friends", (req,res) => {
-        // console.log(friends)
-        res.json(friends)
-    })
+module.exports = (app) => {
     
-    app.post("/api/friends"), (req, res) => {
-        console.log(req.body)
-        // res.json(friends)
-    }
-}
+    app.get('/api/friends', (request, result) => {
+        result.json(friends);
+    })
+
+    app.post('/api/friends', (request, result) => {
+        console.log(request)
+        friends.push(request.body);
+    })
+};
