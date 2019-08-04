@@ -1,8 +1,3 @@
-
-//TIM AND ERIC FRIEND FINDER
-
-//Steve Brule, Tairy Greene, Pierre, Casey Tatum, Raz, Steve Mahanahan, Palmer Scott, Spagett
-
 const path = require("path");
 
 module.exports = function(app) {
@@ -10,7 +5,8 @@ module.exports = function(app) {
         res.sendFile(path.join(__dirname + '/../public/survey.html'))
     })
 
-    app.use((req, res) => {
+    app.use('/', (req, res) => {
+        console.log(req.body)
         res.sendFile(path.join(__dirname + '/../public/home.html'))
     })
 }

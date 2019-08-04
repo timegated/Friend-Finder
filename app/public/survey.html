@@ -13,6 +13,9 @@
 
 <body>
     <div class="container">
+            <ul class="nav d-inline">
+                    <li class="nav-item"><a href="api/friends">Great Job!</a></li>
+                </ul>
         <div class="jumbotron">
             <h1 class="display-4 text-center">Survey</h1>
             <p class="lead text-center">Look at the statements and answer them according to how strongly you identify
@@ -24,136 +27,140 @@
         </div>
 
         <hr>
-        <div class="form-group">
-            <input type="txt" placeholder="Enter Name" class="form-control">
-        </div>
-        <div class="form-group">
-            <input type="text" placeholder="Provide a photo" class="form-control">
-        </div>
-        <hr>
-        <div class="form-group">
-            <label for="question1">I love my pep-pep</label>
-            <select class="form-control" id="question1">
-                <option value="empty"></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-
-        </div>
-        <div class="form-group">
-            <label for="question2">I lost my rascal</label>
-            <select class="form-control" id="question2">
-                <option value="empty"></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-
-        </div>
-        <div class="form-group">
-            <label for="question3">I own a child clown rental score</label>
-            <select class="form-control" id="question3">
-                <option value="empty"></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-
-        </div>
-        <div class="form-group">
-            <label for="question4">I think about my dad quite often</label>
-            <select class="form-control" id="question4">
-                <option value="empty"></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-
-        </div>
-        <div class="form-group">
-            <label for="question5">I want to be part of the most married news team on television</label>
-            <select class="form-control" id="question5">
-                <option value="empty"></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-
-        </div>
-        <div class="form-group">
-            <label for="question6">I use dream cream to fall asleep and I hope it's not poisonous</label>
-            <select class="form-control" id="question6">
-                <option value="empty"></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-
-        </div>
-        <div class="form-group">
-            <label for="question7">When I say good bye I prefer to use the term "Salame"</label>
-            <select class="form-control" id="question7">
-                <option value="empty"></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-
-        </div>
-        <div class="form-group">
-            <label for="question8">I get progressively grosser the more I sing!</label>
-            <select class="form-control" id="question8">
-                <option value="empty"></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-
-        </div>
-        <div class="form-group">
-            <label for="question9">I enjoy running the Celery Man Sequence on my computer</label>
-            <select class="form-control" id="question9">
-                <option value="empty"></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-
-        </div>
-        <div class="form-group">
-            <label for="question10">I enjoy premium european prices</label>
-            <select class="form-control" id="question10">
-                <option value="empty"></option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-
-        </div>
+        <!--Begin Form-->
+        <form role="form">
+                <div class="form-group">
+                        <input type="txt" id="name" placeholder="Enter Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="image" placeholder="Provide a photo" class="form-control">
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <label for="question1">I love my pep-pep</label>
+                        <select class="form-control" id="question1">
+                            <option value="empty"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+            
+                    </div>
+                    <div class="form-group">
+                        <label for="question2">I lost my rascal</label>
+                        <select class="form-control" id="question2">
+                            <option value="empty"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+            
+                    </div>
+                    <div class="form-group">
+                        <label for="question3">I own a child clown rental score</label>
+                        <select class="form-control" id="question3">
+                            <option value="empty"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+            
+                    </div>
+                    <div class="form-group">
+                        <label for="question4">I think about my dad quite often</label>
+                        <select class="form-control" id="question4">
+                            <option value="empty"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+            
+                    </div>
+                    <div class="form-group">
+                        <label for="question5">I want to be part of the most married news team on television</label>
+                        <select class="form-control" id="question5">
+                            <option value="empty"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+            
+                    </div>
+                    <div class="form-group">
+                        <label for="question6">I use dream cream to fall asleep and I hope it's not poisonous</label>
+                        <select class="form-control" id="question6">
+                            <option value="empty"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+            
+                    </div>
+                    <div class="form-group">
+                        <label for="question7">When I say good bye I prefer to use the term "Salame"</label>
+                        <select class="form-control" id="question7">
+                            <option value="empty"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+            
+                    </div>
+                    <div class="form-group">
+                        <label for="question8">I get progressively grosser the more I sing!</label>
+                        <select class="form-control" id="question8">
+                            <option value="empty"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+            
+                    </div>
+                    <div class="form-group">
+                        <label for="question9">I enjoy running the Celery Man Sequence on my computer</label>
+                        <select class="form-control" id="question9">
+                            <option value="empty"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+            
+                    </div>
+                    <div class="form-group">
+                        <label for="question10">I enjoy premium european prices</label>
+                        <select class="form-control" id="question10">
+                            <option value="empty"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
         <div class="text-center mb-4">
-            <button type="submit" id="sendInfo" class="btn btn-dark">Submit</button>
+            <button type="submit" id="sendInfo" class="btn btn-dark">Great Job!</button>
         </div>
+        </form>
+        <!--End Form-->
+        
     </div>
     <div class="modal" id="friendMode" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="dialog">
@@ -165,7 +172,8 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                   Think about your dad!
+                   <h3 id="friendName"></h3>
+                   <img id="friendPhoto" src="#" />
                 </div>
                 <div class="modal-footer">
 
@@ -176,22 +184,67 @@
         </div>
     </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script>
-        $('#sendInfo').on("click", () => {
-            $('#friendMode').toggle()
-        })
 
-        $('#').on('close', () => {
+      
+        $('#sendInfo').click((event) => {
+            event.preventDefault()
+            console.log('sendInfo Works')
+            const user = {
+                name: $('#name').val().trim(),
+                img:$('#image').val().trim(),
+                scores: [
+                    $('#question1').val(),
+                    $('#question2').val(),
+                    $('#question3').val(),
+                    $('#question4').val(),
+                    $('#question5').val(),
+                    $('#question6').val(),
+                    $('#question7').val(),
+                    $('#question8').val(),
+                    $('#question9').val(),
+                    $('#question10').val()
+                ]
+            }
+            // console.log(user)
+          
+            $.post("/api/friends", user, (data, status) => {
+              
+
+                // $('#friendName').text(friends.name)
+                // $('#friendPhoto').attr("src", friends.img)
+                $('#friendMode').toggle()
+            })
+                    $('#name').val("")
+                    $('#image').val("")
+                    $('#question1').val("")
+                    $('#question2').val("")
+                    $('#question3').val("")
+                    $('#question4').val("")
+                    $('#question5').val("")
+                    $('#question6').val("")
+                    $('#question7').val("")
+                    $('#question8').val("")
+                    $('#question9').val("")
+                    $('#question10').val("")
+
+
+
+
+        })          
+                    
+
+        $('#close').on('click', () => {
             $('#friendMode').hide()
         })
     </script>
