@@ -7,16 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+        .container {
+         font-family: 'Russo One', sans-serif;
+        }
+        .container .nav li a {
+            color:green;
+        }
+        .container .nav li a:hover {
+            color:blue;
+        }
+        .background {
+            background-image: url("https://images3.alphacoders.com/789/thumb-1920-78957.jpg");
+            background-size:cover;
+            
+        }
+        .homebutton {
+            width:25%;
+            margin-top: 0px;
+        }
+         
+     </style>
 </head>
 <body>
 <div class="container">
-    <ul class="nav d-inline">
+    <ul class="nav d-inline m-4">
         <li class="nav-item"><a href="/api/friends">Great Job!</a></li>
     </ul>
-    <div class="jumbotron mt-4">
+    <div class="jumbotron background">
         <h1 class="text-center">Tim and Eric Awesome Friends</h1>
-        <p class="lead text-center">Find your pep-pep</p>
-        <a class="btn btn-dark btn-lg d-block mx-auto" href="/survey">Take the Survey</a>
+        <p class="lead text-center">Find your match with a character from the Tim and Eric Awesome Show!</p>
+        <a class="btn btn-dark d-block mx-auto homebutton" href="/survey">Take the Survey</a>
     </div>
 </div>
           

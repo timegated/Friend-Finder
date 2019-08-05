@@ -1,5 +1,16 @@
 $('#sendInfo').click((event) => {
     event.preventDefault()
+    let validate = () => {
+        let valid = true
+    $('.form-control').each(function(){
+           
+        if($(this).val() === ''){
+                valid = false
+            }
+        })
+        return valid
+    }
+   if(validate()) {
     console.log('sendInfo Works')
     const user = {
         name: $('#name').val().trim(),
@@ -30,6 +41,14 @@ $('#sendInfo').click((event) => {
         $('#friendMode').toggle()   
         }
     })
+
+   } else {
+       $('#notValid').toggle()
+       $('#notvalidclose').click(() => {
+           $('#notValid').hide()
+       })
+   }
+    
             $('#name').val("")
             $('#image').val("")
             $('#question1').val("")

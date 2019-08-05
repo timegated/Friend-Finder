@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+   
     <link rel="stylesheet" type="text/css"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <meta charset="UTF-8">
@@ -10,14 +10,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Survey</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+       .container {
+        font-family: 'Russo One', sans-serif;
+       }
+       .container .nav li a {
+           color:green;
+       }
+       .container .nav li a:hover {
+           color:blue;
+       }
+     
+       .jumbotron-background {
+            background-image:url("https://static0.cbrimages.com/wordpress/wp-content/uploads/2016/12/tom-goes-to-the-mayor.jpg?q=50&fit=crop&w=738&h=369");
+            background-size:cover;
+            background-position:center;
+            
+       }
+       
+      
+        
+    </style>
 </head>
 
 <body>
-    <div class="container">
-            <ul class="nav d-inline">
-                    <li class="nav-item"><a href="api/friends">Great Job!</a></li>
+    <div class="container background-survey">
+            <ul class="nav d-flex mt-4">
+                    <li class="nav-item mr-2"><a href="api/friends">Great Job!</a></li>
+                    
+                    <li class="nav-item"><a href="/">Home</a></li>
                 </ul>
-        <div class="jumbotron">
+        <div class="jumbotron jumbotron-background">
             <h1 class="display-4 text-center">Survey</h1>
             <p class="lead text-center">Look at the statements and answer them according to how strongly you identify
                 with each one on a scale from 1 to 5.<br>
@@ -179,6 +203,27 @@
                 <div class="modal-footer">
 
                     <button type="button" class="btn btn-secondary" id="close">Salame!</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="notValid" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Incomplete!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                       
+                    </button>
+                </div>
+                <div class="modal-body">
+                   <h3>Make sure you complete the form!</h3>
+                   <img style="width:150px; height: 150px;margin:auto;display:block" src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/eric-wareheim-fay-helfer.jpg" />
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" id="notvalidclose">Try Again</button>
                     
                 </div>
             </div>
