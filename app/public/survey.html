@@ -12,11 +12,15 @@
     <title>Survey</title>
     <style>
        @import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+       body {
+           background:rgb(156, 144, 144);
+       }
        .container {
         font-family: 'Russo One', sans-serif;
+        border: 1px solid lightblue;
        }
        .container .nav li a {
-           color:green;
+           color:lightblue;
        }
        .container .nav li a:hover {
            color:blue;
@@ -24,11 +28,19 @@
      
        .jumbotron-background {
             background-image:url("https://static0.cbrimages.com/wordpress/wp-content/uploads/2016/12/tom-goes-to-the-mayor.jpg?q=50&fit=crop&w=738&h=369");
-            background-size:cover;
-            background-position:center;
-            
+            background-size:contain;
+            animation: slide 5s alternate infinite;
+
        }
-       
+       @-webkit-keyframes slide {
+           from {background-position: 1%; }
+           to {background-position:100%; }
+           
+       }
+       .text-container {
+           background:lightblue;
+       }
+     
       
         
     </style>
@@ -37,17 +49,19 @@
 <body>
     <div class="container background-survey">
             <ul class="nav d-flex mt-4">
-                    <li class="nav-item mr-2"><a href="api/friends">Great Job!</a></li>
+                    <li class="nav-item mr-2"><a href="api/friends">Great Job! API</a></li>
                     
                     <li class="nav-item"><a href="/">Home</a></li>
                 </ul>
         <div class="jumbotron jumbotron-background">
+            <div class="text-container">
             <h1 class="display-4 text-center">Survey</h1>
-            <p class="lead text-center">Look at the statements and answer them according to how strongly you identify
-                with each one on a scale from 1 to 5.<br>
+            <p class="lead text-center">Use your knowledge of the show to answer the following statements based on how strongly you identify with tom-goes-to-the-mayor
+                <br>
                 One is the weakest and five is the strongest
 
             </p>
+        </div>
 
         </div>
 
@@ -86,7 +100,7 @@
             
                     </div>
                     <div class="form-group">
-                        <label for="question3">I own a child clown rental score</label>
+                        <label for="question3">I enjoy low low prices</label>
                         <select class="form-control" id="question3">
                             <option value="empty"></option>
                             <option value="1">1</option>
@@ -122,7 +136,7 @@
             
                     </div>
                     <div class="form-group">
-                        <label for="question6">I use dream cream to fall asleep and I hope it's not poisonous</label>
+                        <label for="question6">I worked for Cinco for a number of years</label>
                         <select class="form-control" id="question6">
                             <option value="empty"></option>
                             <option value="1">1</option>
@@ -191,14 +205,15 @@
         <div class="modal-dialog" role="dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Great Job</h5>
+                    <h5 class="modal-title">Great Job!</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                        
                     </button>
                 </div>
                 <div class="modal-body">
-                   <h3 id="friendName"></h3>
-                   <img id="friendPhoto" src="#" />
+                    <h3 class="text-center">Your New Friend!</h3>
+                   <h3 class="text-center" id="friendName"></h3>
+                   <img style="width:300px; height:300px;margin:auto;display:block" id="friendPhoto" src="#" />
                 </div>
                 <div class="modal-footer">
 

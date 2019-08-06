@@ -2,7 +2,7 @@ let friends = [
     {
         name:"Steve Brule",
         img:"https://ih1.redbubble.net/image.211529091.3871/ap,550x550,12x12,1,transparent,t.u1.png",
-        scores:[2,3,2,4,5,4,3,4,5,1]
+        scores:[2,1,2,3,4,4,3,4,5,1]
     },
     {
         name:"Jan Skylar",
@@ -12,17 +12,17 @@ let friends = [
     {
         name:"Wayne Skylar",
         img:"https://i.imgur.com/VUX5jgU.jpg",
-        scores: [1,3,2,2,3,1,4,1,2,3]
+        scores: [1,2,2,2,3,1,5,1,2,3]
     },
     {
         name:"Pierre",
         img:"https://memegenerator.net/img/images/13836916.jpg",
-        scores:[4,3,2,1,4,3,5,3,2,1]
+        scores:[4,3,5,1,4,3,5,3,2,1]
     },
     {
         name:"Paul Rudd",
         img:"https://66.media.tumblr.com/tumblr_lrv4spyrA41qgiie0.png",
-        scores:[4,3,2,3,4,5,3,2,4,5]
+        scores:[1,3,2,3,4,5,3,2,4,1]
 
     }
 
