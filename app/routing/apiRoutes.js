@@ -34,6 +34,7 @@ module.exports = (app) => {
         totalScores.sort(function compareScores(a,b) {
             return a.totalDiff - b.totalDiff
         })
+        friends.push(request.body)
         result.json(totalScores[0])
         
 
